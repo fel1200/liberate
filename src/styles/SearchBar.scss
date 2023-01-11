@@ -1,0 +1,56 @@
+.main .searchBar{
+    margin:32px 228px 4px 228px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.main .searchBar .searchBarTitle{
+    width: 100%;
+    margin:0px;
+    padding:4px;
+    display:flex;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-size: var(--fontSubheading);
+    color: var(--primary);
+}
+
+.main .searchBar .searchBarContainer{
+    width:100%;
+    height:149px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main .searchBar .searchBarContainer .searchBarText{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 482px;
+    height:60px;
+    
+}
+
+.main .searchBar .searchBarContainer .searchBarText input{
+   height:70%;
+   width:100%;
+   padding-left: 32px;
+   padding-right: 32px;
+   font-size: var(--fontSubheading);
+}
+
+.main .searchBar .searchBarContainer button{
+    margin:4px 24px 4px 0px;
+    height: 50px;
+    width:206px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--tertiary);
+    color:var(--brightContrast);
+    font-size:20px;
+}

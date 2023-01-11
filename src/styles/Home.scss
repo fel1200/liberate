@@ -1,0 +1,189 @@
+.main{
+  display:grid;  
+  grid-template-rows: 590px 200px 215px 468px 4px 14px;
+}
+
+
+.main .hero{
+    display:flex;
+    justify-content:space-around;
+}
+
+.main .hero .heroText{
+    display:flex;
+    flex-direction:column;    
+}
+
+
+.main .hero .heroText h1{
+    margin:80px 0px 4px 188px;
+    font-size: var(--fontHero);
+    color:var(--primary);
+}
+
+.main .hero .heroText p{
+    margin:4px 0px 4px 188px;
+    font-size: var(--fontParagraph);
+    color:var(--primary);
+}
+
+.main .hero .heroText .buttonsHeroText{
+    margin:32px 0px 4px 188px;
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+}
+
+.main .hero .heroText .buttonsHeroText button{
+    height: 50px;
+    width:40%;
+    font-size: 18px;
+    border:none;
+    border-radius: 4px;
+    margin-inline: 16px;
+
+}
+
+.main .hero .heroText .buttonsHeroText .buttonActivity{
+    background: linear-gradient(129.63deg, var(--primary) 20.56%, var(--secondary) 70.58%);    
+    color:var(--brightContrast);
+}
+
+.main .hero .heroText .buttonsHeroText .buttonProfile{
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right,var(--primary),var(--secondary)) border-box;
+    border: 1.5px solid transparent;    
+    color:var(--secondary);
+}
+
+.main .hero .heroImage{
+    height:546px;
+    width:546px;
+}
+
+.elipse2{
+    position: absolute;
+    width: 305px;
+    height: 305px;
+    left: 698px;
+    top: 511px;
+
+    /* Primary */
+
+    background: var(--tertiary);
+    filter: blur(200px);
+}
+
+.main .sponsors{
+    margin-top:24px;
+    display:flex;
+    align-items:center;
+    flex-direction:column ;
+}
+
+.main .sponsors .sponsorsText{
+    width:600px;
+    display:flex;
+    justify-content:flex-start;
+}
+.main .sponsors .sponsorsText p{
+    color:var(--primary);
+}
+
+.main .sponsors .sponsorsLogos{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:0px 32px;
+    border-radius: 16px;;
+    width:600px;
+    height:120px;
+    background-color: var(--primary);
+    opacity: .7;
+}
+
+.main .sponsors .sponsorsLogos img{
+    width:60px;
+    height:60px;
+}
+.main .testimonials{
+    
+    margin:36px 188px 16px 188px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+
+}
+
+.main .testimonials .testimonialsText{
+    margin-top: 4px;
+    margin-bottom: 8px;
+    font-size: var(--fontSubheading);
+    color:var(--primary)
+}
+
+.main .testimonials .testimonialsCards{
+    width:100%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content:space-around;
+    height: 438px;
+
+}
+
+.main .testimonials .testimonialsCards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:205px;
+    height:350px;
+    
+}
+
+.main .testimonials .testimonialsCards .card .cardImage{
+    display: flex;
+    justify-content: center;
+    z-index: 101;
+    position: relative;
+
+}
+
+.main .testimonials .testimonialsCards .card img{
+    width:90px;
+    height:90px;
+    z-index: 101;
+    position: relative;
+}
+.main .testimonials .testimonialsCards .cardText{
+    margin-top: -50px;
+    padding:4px;
+    width:205px;
+    height:250px;
+    flex-direction: column;
+    background: linear-gradient(90deg, #FE8215 0%, #005A81 124.58%);
+    opacity: 0.9;
+    border-radius: 16px;
+
+}
+
+.main .testimonials .testimonialsCards .cardText p{
+    color:var(--brightContrast);
+    text-align: center;
+}
+
+.main .testimonials .testimonialsCards .cardText .cardTextName{
+    margin-top: 32px;
+    text-transform:uppercase;
+    font-size:18px;
+}
+.main .testimonials .testimonialsCards .card .cardTextTestimonial{
+    font-size:14px;
+}
+.main .callToAction{
+    
+}
+
+.main .footer{
+    background: linear-gradient(129.63deg, var(--primary) 20.56%, var(--secondary) 70.58%);
+}

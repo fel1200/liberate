@@ -1,0 +1,49 @@
+@import 'vars';
+
+.elipse{
+    position: absolute;
+    width: 549px;
+    height: 549px;
+    left: 158px;
+    top: -358px;
+
+    /* Primary */
+
+    background: #005A81;
+    filter: blur(200px);
+}
+nav{
+    margin:0;
+    //padding:0 188;    
+    display:flex;    
+    justify-content:space-around;
+    //background-color: black;
+}
+
+
+.header .logoContainer img{
+    width: 80px ;
+    cursor:pointer;
+}
+
+.header .navigation{
+    
+    display:flex;
+    justify-content:space-around;
+    list-style:none;
+    padding:0;
+    margin:0;
+    height:60px;
+    align-items: center;
+}
+
+.header .navigation li a{
+    text-decoration: none;
+    color:var(--tertiary);
+    font-size: 22px;
+    padding:16px;
+}
+
+.header .navigation li a:hover{
+    color:var(--secondary);
+}
