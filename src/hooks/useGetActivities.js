@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import {useReducer} from '../hooks/useReducer';
-import {useActivities} from '../hooks/useActivities';
+//import {useActivities} from '../hooks/useActivities';
 import axios from 'axios';
 
 const options = {
@@ -15,31 +15,23 @@ const options = {
 
 const useGetActivities = () =>{
   
-    const {
-      totalActivities,
-      setTotalActivities,
-      searchedActivities,
-      setSearchedActivities,
-      errorLoading,
-      setErrorLoading,
-      loading,
-      setLoading} = useActivities();
+  const [loading, setLoading] = useState(true);
+  const [errorLoading, setErrorLoading] = useState(false);
+  const [totalActivities, setTotalActivities] = useState([]);
+
     
-    setLoading(true);
     useEffect(() => {
         async function fetchActivities(){
         try {
           const response = await axios(options);
           setTotalActivities(response.data);
-            
+           
         } catch (error) {
-          console.log("Error in axios get "+error.message);          
+          console.log("Error in axios "+error.message);          
           setErrorLoading(error.message);
-        }finally{
+        }finally{          
           setLoading(false);
         }
-        //console.log(activities);
-
       }
     fetchActivities();
     }, []);

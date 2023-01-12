@@ -8,7 +8,7 @@ const Activities = () => {
     return(
         <>
             <div className='main'>
-                <SearchBar/>
+                 <SearchBar/>
                 <div className='activitiesCards'>
                     <ActivitiesSection/>
                 </div>
